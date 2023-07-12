@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./style.css">
+    <title>Random Workout Generator</title>
+</head>
+<body>
+    <div class="game-container">
+      <header>
+        <h1>Random Workout Generator</h1>
+      </header>
+
+      <div class="instructions">
+        <div class="instruction">
+          <h3>Step 1</h3>
+          <p>Input a number between 0 and 9</p>
+        </div>
+        <div class="instruction">
+          <h3>Step 2</h3>
+          <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+        </div>
+        <div class="instruction">
+          <h3>Step 3</h3>
+          <p>Click "Next Round" to play again.</p>
+        </div>
+      </div>
+
+      <script src="./script.js"></script>
+
+      <div class="button-container">
+        <button class="button" onclick = "generate_random_workout()">Let's Go!</button>
+      </div>
+
+      <div class="result">
+        <script>
+          console.log(document.generate_random_workout());
+        </script>
+      </div>
+    </div>
+</body>
+</html>
