@@ -26,5 +26,29 @@ const generate_random_workout = () => {
     }
 }
 
-console.log(generate_random_workout());
+
+let letsGo = document.querySelector('button');
+
+function showResult(){
+    let workout = generate_random_workout();
+    let statement = document.createElement('h2');
+    statement.id = 'test';
+    statement.innerHTML = `You will ${workout}`;
+    document.getElementById('result').appendChild(statement);
+}
+
+letsGo.addEventListener('click',showResult);
+
+/*let workout = generate_random_workout;
+let element = document.querySelector('button');
+function turnButtonRed(){
+    element.style.backgroundColor = 'red';
+}
+s
+element.onclick = turnButtonRed;
+
+let statement = document.createElement('h2');
+statement.id = 'result';
+statement.innerHTML = `you will ${workout}`;
+document.getElementById('result').appendChild(statement);*/
 
