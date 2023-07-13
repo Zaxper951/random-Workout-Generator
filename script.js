@@ -21,7 +21,7 @@ const generate_random_workout = () => {
         break;
         case 9: return 'Hold 1 minutes of plank';
         break;
-        default: return 'This should never run';
+        default: return 'run 200 m';
         break;
     }
 }
